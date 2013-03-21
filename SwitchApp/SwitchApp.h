@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  SwitchApp.h
 //  SwitchApp
 //
 //  Created by sassembla on 2013/03/21.
@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
-- (void) ignite:(NSString * )args;
+@interface SwitchApp : NSApplication
+int NSApplicationMain(int argc, const char *argv[]);
 @end

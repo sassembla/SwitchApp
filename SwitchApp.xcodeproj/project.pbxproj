@@ -12,12 +12,13 @@
 		1349DCC816FAA05000D52837 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1349DCC716FAA05000D52837 /* main.m */; };
 		1349DCCC16FAA05000D52837 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1349DCCA16FAA05000D52837 /* Credits.rtf */; };
 		1349DCCF16FAA05000D52837 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1349DCCE16FAA05000D52837 /* AppDelegate.m */; };
-		1349DCD216FAA05000D52837 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1349DCD016FAA05000D52837 /* MainMenu.xib */; };
 		1349DCDA16FAA05000D52837 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1349DCD916FAA05000D52837 /* SenTestingKit.framework */; };
 		1349DCDB16FAA05000D52837 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1349DCBB16FAA05000D52837 /* Cocoa.framework */; };
 		1349DCE316FAA05000D52837 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1349DCE116FAA05000D52837 /* InfoPlist.strings */; };
 		1349DCE616FAA05000D52837 /* SwitchAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1349DCE516FAA05000D52837 /* SwitchAppTests.m */; };
 		1349DCF016FAA09E00D52837 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1349DCEF16FAA09E00D52837 /* README.md */; };
+		1349DCF716FAB45100D52837 /* SwitchApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1349DCF616FAB45100D52837 /* SwitchApp.m */; };
+		1349DCF816FAB45100D52837 /* SwitchApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1349DCF616FAB45100D52837 /* SwitchApp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,6 @@
 		1349DCCB16FAA05000D52837 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		1349DCCD16FAA05000D52837 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1349DCCE16FAA05000D52837 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; usesTabs = 1; };
-		1349DCD116FAA05000D52837 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1349DCD816FAA05000D52837 /* SwitchAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitchAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1349DCD916FAA05000D52837 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		1349DCE016FAA05000D52837 /* SwitchAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwitchAppTests-Info.plist"; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		1349DCE416FAA05000D52837 /* SwitchAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchAppTests.h; sourceTree = "<group>"; };
 		1349DCE516FAA05000D52837 /* SwitchAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchAppTests.m; sourceTree = "<group>"; };
 		1349DCEF16FAA09E00D52837 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		1349DCF516FAB45100D52837 /* SwitchApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchApp.h; sourceTree = "<group>"; };
+		1349DCF616FAB45100D52837 /* SwitchApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchApp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +121,6 @@
 			children = (
 				1349DCCD16FAA05000D52837 /* AppDelegate.h */,
 				1349DCCE16FAA05000D52837 /* AppDelegate.m */,
-				1349DCD016FAA05000D52837 /* MainMenu.xib */,
 				1349DCC216FAA05000D52837 /* Supporting Files */,
 			);
 			path = SwitchApp;
@@ -133,6 +134,8 @@
 				1349DCC716FAA05000D52837 /* main.m */,
 				1349DCC916FAA05000D52837 /* SwitchApp-Prefix.pch */,
 				1349DCCA16FAA05000D52837 /* Credits.rtf */,
+				1349DCF516FAB45100D52837 /* SwitchApp.h */,
+				1349DCF616FAB45100D52837 /* SwitchApp.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -229,7 +232,6 @@
 			files = (
 				1349DCC616FAA05000D52837 /* InfoPlist.strings in Resources */,
 				1349DCCC16FAA05000D52837 /* Credits.rtf in Resources */,
-				1349DCD216FAA05000D52837 /* MainMenu.xib in Resources */,
 				1349DCF016FAA09E00D52837 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +269,7 @@
 			files = (
 				1349DCC816FAA05000D52837 /* main.m in Sources */,
 				1349DCCF16FAA05000D52837 /* AppDelegate.m in Sources */,
+				1349DCF716FAB45100D52837 /* SwitchApp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1349DCE616FAA05000D52837 /* SwitchAppTests.m in Sources */,
+				1349DCF816FAB45100D52837 /* SwitchApp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +307,6 @@
 				1349DCCB16FAA05000D52837 /* en */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		1349DCD016FAA05000D52837 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1349DCD116FAA05000D52837 /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		1349DCE116FAA05000D52837 /* InfoPlist.strings */ = {

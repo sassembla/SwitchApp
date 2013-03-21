@@ -8,28 +8,34 @@
 
 #import "AppDelegate.h"
 
+
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
+NSString * privateArgs;
+
+- (void) ignite:(NSString * )args {
+	privateArgs = [[NSString alloc]initWithString:args];
+}
+
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+	NSLog(@"privateArgs %@", privateArgs);
 	
-//    remove view
-	
-//    add hook
-	[self switchAppFrom:@"" to:@""];
+//	ここでキーを分解すればOKなんだけど後回し
+	[self switchAppFrom:@"com.unity3d" to:@"com.sublimetext.2"];
+	exit(1);
 }
 
 - (void) switchAppFrom:(NSString * )fromApp to:(NSString * )toApp {
     NSArray *apps = [[NSWorkspace sharedWorkspace] runningApplications];
-    
-    for (NSRunningApplication *app in apps) {
+
+    for (NSRunningApplication * app in apps) {
         if([app.bundleIdentifier.lowercaseString hasPrefix:fromApp]) {
-            [app hide];
             [app activateWithOptions:NSApplicationActivateIgnoringOtherApps];
-            //            [app unhide];
         }
     }
-    for (NSRunningApplication *app in apps) {
+		
+    for (NSRunningApplication * app in apps) {
         if([app.bundleIdentifier.lowercaseString isEqualToString:toApp]) {
             [app activateWithOptions:NSApplicationActivateAllWindows|NSApplicationActivateIgnoringOtherApps];
         }
