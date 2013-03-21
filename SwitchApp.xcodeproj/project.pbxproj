@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1349DCBC16FAA05000D52837 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1349DCBB16FAA05000D52837 /* Cocoa.framework */; };
+		1349DCC616FAA05000D52837 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1349DCC416FAA05000D52837 /* InfoPlist.strings */; };
+		1349DCC816FAA05000D52837 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1349DCC716FAA05000D52837 /* main.m */; };
+		1349DCCC16FAA05000D52837 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1349DCCA16FAA05000D52837 /* Credits.rtf */; };
+		1349DCCF16FAA05000D52837 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1349DCCE16FAA05000D52837 /* AppDelegate.m */; };
+		1349DCD216FAA05000D52837 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1349DCD016FAA05000D52837 /* MainMenu.xib */; };
+		1349DCDA16FAA05000D52837 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1349DCD916FAA05000D52837 /* SenTestingKit.framework */; };
+		1349DCDB16FAA05000D52837 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1349DCBB16FAA05000D52837 /* Cocoa.framework */; };
+		1349DCE316FAA05000D52837 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1349DCE116FAA05000D52837 /* InfoPlist.strings */; };
+		1349DCE616FAA05000D52837 /* SwitchAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1349DCE516FAA05000D52837 /* SwitchAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1349DCDC16FAA05000D52837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1349DCAE16FAA04F00D52837 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1349DCB616FAA04F00D52837;
+			remoteInfo = SwitchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1349DCB716FAA05000D52837 /* SwitchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1349DCBB16FAA05000D52837 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1349DCBE16FAA05000D52837 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1349DCBF16FAA05000D52837 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1349DCC016FAA05000D52837 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1349DCC316FAA05000D52837 /* SwitchApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwitchApp-Info.plist"; sourceTree = "<group>"; };
+		1349DCC516FAA05000D52837 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1349DCC716FAA05000D52837 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1349DCC916FAA05000D52837 /* SwitchApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwitchApp-Prefix.pch"; sourceTree = "<group>"; };
+		1349DCCB16FAA05000D52837 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1349DCCD16FAA05000D52837 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1349DCCE16FAA05000D52837 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1349DCD116FAA05000D52837 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1349DCD816FAA05000D52837 /* SwitchAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitchAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1349DCD916FAA05000D52837 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1349DCE016FAA05000D52837 /* SwitchAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwitchAppTests-Info.plist"; sourceTree = "<group>"; };
+		1349DCE216FAA05000D52837 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1349DCE416FAA05000D52837 /* SwitchAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchAppTests.h; sourceTree = "<group>"; };
+		1349DCE516FAA05000D52837 /* SwitchAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchAppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1349DCB416FAA04F00D52837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1349DCBC16FAA05000D52837 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1349DCD416FAA05000D52837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1349DCDA16FAA05000D52837 /* SenTestingKit.framework in Frameworks */,
+				1349DCDB16FAA05000D52837 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1349DCAC16FAA04F00D52837 = {
+			isa = PBXGroup;
+			children = (
+				1349DCC116FAA05000D52837 /* SwitchApp */,
+				1349DCDE16FAA05000D52837 /* SwitchAppTests */,
+				1349DCBA16FAA05000D52837 /* Frameworks */,
+				1349DCB816FAA05000D52837 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1349DCB816FAA05000D52837 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1349DCB716FAA05000D52837 /* SwitchApp.app */,
+				1349DCD816FAA05000D52837 /* SwitchAppTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1349DCBA16FAA05000D52837 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1349DCBB16FAA05000D52837 /* Cocoa.framework */,
+				1349DCD916FAA05000D52837 /* SenTestingKit.framework */,
+				1349DCBD16FAA05000D52837 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1349DCBD16FAA05000D52837 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1349DCBE16FAA05000D52837 /* AppKit.framework */,
+				1349DCBF16FAA05000D52837 /* CoreData.framework */,
+				1349DCC016FAA05000D52837 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1349DCC116FAA05000D52837 /* SwitchApp */ = {
+			isa = PBXGroup;
+			children = (
+				1349DCCD16FAA05000D52837 /* AppDelegate.h */,
+				1349DCCE16FAA05000D52837 /* AppDelegate.m */,
+				1349DCD016FAA05000D52837 /* MainMenu.xib */,
+				1349DCC216FAA05000D52837 /* Supporting Files */,
+			);
+			path = SwitchApp;
+			sourceTree = "<group>";
+		};
+		1349DCC216FAA05000D52837 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1349DCC316FAA05000D52837 /* SwitchApp-Info.plist */,
+				1349DCC416FAA05000D52837 /* InfoPlist.strings */,
+				1349DCC716FAA05000D52837 /* main.m */,
+				1349DCC916FAA05000D52837 /* SwitchApp-Prefix.pch */,
+				1349DCCA16FAA05000D52837 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1349DCDE16FAA05000D52837 /* SwitchAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				1349DCE416FAA05000D52837 /* SwitchAppTests.h */,
+				1349DCE516FAA05000D52837 /* SwitchAppTests.m */,
+				1349DCDF16FAA05000D52837 /* Supporting Files */,
+			);
+			path = SwitchAppTests;
+			sourceTree = "<group>";
+		};
+		1349DCDF16FAA05000D52837 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1349DCE016FAA05000D52837 /* SwitchAppTests-Info.plist */,
+				1349DCE116FAA05000D52837 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1349DCB616FAA04F00D52837 /* SwitchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1349DCE916FAA05000D52837 /* Build configuration list for PBXNativeTarget "SwitchApp" */;
+			buildPhases = (
+				1349DCB316FAA04F00D52837 /* Sources */,
+				1349DCB416FAA04F00D52837 /* Frameworks */,
+				1349DCB516FAA04F00D52837 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwitchApp;
+			productName = SwitchApp;
+			productReference = 1349DCB716FAA05000D52837 /* SwitchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1349DCD716FAA05000D52837 /* SwitchAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1349DCEC16FAA05000D52837 /* Build configuration list for PBXNativeTarget "SwitchAppTests" */;
+			buildPhases = (
+				1349DCD316FAA05000D52837 /* Sources */,
+				1349DCD416FAA05000D52837 /* Frameworks */,
+				1349DCD516FAA05000D52837 /* Resources */,
+				1349DCD616FAA05000D52837 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1349DCDD16FAA05000D52837 /* PBXTargetDependency */,
+			);
+			name = SwitchAppTests;
+			productName = SwitchAppTests;
+			productReference = 1349DCD816FAA05000D52837 /* SwitchAppTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1349DCAE16FAA04F00D52837 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "KISSAKI Inc,";
+			};
+			buildConfigurationList = 1349DCB116FAA04F00D52837 /* Build configuration list for PBXProject "SwitchApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1349DCAC16FAA04F00D52837;
+			productRefGroup = 1349DCB816FAA05000D52837 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1349DCB616FAA04F00D52837 /* SwitchApp */,
+				1349DCD716FAA05000D52837 /* SwitchAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1349DCB516FAA04F00D52837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1349DCC616FAA05000D52837 /* InfoPlist.strings in Resources */,
+				1349DCCC16FAA05000D52837 /* Credits.rtf in Resources */,
+				1349DCD216FAA05000D52837 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1349DCD516FAA05000D52837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1349DCE316FAA05000D52837 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1349DCD616FAA05000D52837 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1349DCB316FAA04F00D52837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1349DCC816FAA05000D52837 /* main.m in Sources */,
+				1349DCCF16FAA05000D52837 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1349DCD316FAA05000D52837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1349DCE616FAA05000D52837 /* SwitchAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1349DCDD16FAA05000D52837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1349DCB616FAA04F00D52837 /* SwitchApp */;
+			targetProxy = 1349DCDC16FAA05000D52837 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1349DCC416FAA05000D52837 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1349DCC516FAA05000D52837 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1349DCCA16FAA05000D52837 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1349DCCB16FAA05000D52837 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1349DCD016FAA05000D52837 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1349DCD116FAA05000D52837 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		1349DCE116FAA05000D52837 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1349DCE216FAA05000D52837 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1349DCE716FAA05000D52837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1349DCE816FAA05000D52837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1349DCEA16FAA05000D52837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwitchApp/SwitchApp-Prefix.pch";
+				INFOPLIST_FILE = "SwitchApp/SwitchApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1349DCEB16FAA05000D52837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwitchApp/SwitchApp-Prefix.pch";
+				INFOPLIST_FILE = "SwitchApp/SwitchApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1349DCED16FAA05000D52837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwitchApp.app/Contents/MacOS/SwitchApp";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwitchApp/SwitchApp-Prefix.pch";
+				INFOPLIST_FILE = "SwitchAppTests/SwitchAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1349DCEE16FAA05000D52837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwitchApp.app/Contents/MacOS/SwitchApp";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwitchApp/SwitchApp-Prefix.pch";
+				INFOPLIST_FILE = "SwitchAppTests/SwitchAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1349DCB116FAA04F00D52837 /* Build configuration list for PBXProject "SwitchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1349DCE716FAA05000D52837 /* Debug */,
+				1349DCE816FAA05000D52837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1349DCE916FAA05000D52837 /* Build configuration list for PBXNativeTarget "SwitchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1349DCEA16FAA05000D52837 /* Debug */,
+				1349DCEB16FAA05000D52837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1349DCEC16FAA05000D52837 /* Build configuration list for PBXNativeTarget "SwitchAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1349DCED16FAA05000D52837 /* Debug */,
+				1349DCEE16FAA05000D52837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1349DCAE16FAA04F00D52837 /* Project object */;
+}
