@@ -12,7 +12,30 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+	
+//    remove view
+	
+//    add hook
+	[self switchAppFrom:@"" to:@""];
 }
+
+- (void) switchAppFrom:(NSString * )fromApp to:(NSString * )toApp {
+    NSArray *apps = [[NSWorkspace sharedWorkspace] runningApplications];
+    
+    for (NSRunningApplication *app in apps) {
+        if([app.bundleIdentifier.lowercaseString hasPrefix:fromApp]) {
+            [app hide];
+            [app activateWithOptions:NSApplicationActivateIgnoringOtherApps];
+            //            [app unhide];
+        }
+    }
+    for (NSRunningApplication *app in apps) {
+        if([app.bundleIdentifier.lowercaseString isEqualToString:toApp]) {
+            [app activateWithOptions:NSApplicationActivateAllWindows|NSApplicationActivateIgnoringOtherApps];
+        }
+    }
+}
+
+
 
 @end
