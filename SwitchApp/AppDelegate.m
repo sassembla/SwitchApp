@@ -25,8 +25,8 @@ NSDictionary * argsDict;
 - (void)applicationDidFinishLaunching:(NSNotification * ) aNotification
 {
     @try {
-		NSAssert1(argsDict[KEY_FROM], @"%@ fromApplication required", KEY_FROM);
-		NSAssert1(argsDict[KEY_TO], @"%@ toApplication required", KEY_TO);
+//		NSAssert1(argsDict[KEY_FROM], @"%@ fromApplication required", KEY_FROM);
+//		NSAssert1(argsDict[KEY_TO], @"%@ toApplication required", KEY_TO);
 		
 		if (argsDict[KEY_VERSION]) NSLog(@"version %@", VERSION);
 		
@@ -40,20 +40,25 @@ NSDictionary * argsDict;
 	}
 }
 
+
 - (void) switchAppFrom:(NSString * )fromApp to:(NSString * )toApp {
+	NSLog(@"fromApp %@", fromApp);
+	NSLog(@"toApp %@", toApp);
     NSArray *apps = [[NSWorkspace sharedWorkspace] runningApplications];
 
     for (NSRunningApplication * app in apps) {
         if([app.bundleIdentifier.lowercaseString hasPrefix:fromApp]) {
 			NSLog(@"app %@",app);
-            [app activateWithOptions:NSApplicationActivateAllWindows];
+            bool result = [app activateWithOptions:NSApplicationActivateIgnoringOtherApps];//OK
+			NSLog(@"result1 %d", result);
         }
     }
 		
     for (NSRunningApplication * app in apps) {
         if([app.bundleIdentifier.lowercaseString isEqualToString:toApp]) {
 			NSLog(@"app %@",app);
-            [app activateWithOptions:NSApplicationActivateIgnoringOtherApps];
+            bool result = [app activateWithOptions:NSApplicationActivateIgnoringOtherApps];
+			NSLog(@"result1 %d", result);
         }
     }
 }
