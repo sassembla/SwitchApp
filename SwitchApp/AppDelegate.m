@@ -9,21 +9,35 @@
 #import "AppDelegate.h"
 
 
+#define KEY_TO	(@"-t")
+#define KEY_FROM	(@"-f")
+#define KEY_VERSION	(@"-v")
+
+
 @implementation AppDelegate
 
-NSString * privateArgs;
+NSDictionary * argsDict;
 
-- (void) ignite:(NSString * )args {
-	privateArgs = [[NSString alloc]initWithString:args];
+- (void) setArgs:(NSMutableDictionary * )currentArgsDict {
+	argsDict = [[NSDictionary alloc]initWithDictionary:currentArgsDict];
 }
 
-
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	NSLog(@"privateArgs %@", privateArgs);
-	
-//	ここでキーを分解すればOKなんだけど後回し
-	[self switchAppFrom:@"com.unity3d" to:@"com.sublimetext.2"];
-	exit(1);
+- (void)applicationDidFinishLaunching:(NSNotification * ) aNotification
+{
+    @try {
+		NSAssert1(argsDict[KEY_FROM], @"%@ fromApplication required", KEY_FROM);
+		NSAssert1(argsDict[KEY_TO], @"%@ toApplication required", KEY_TO);
+		
+		if (argsDict[KEY_VERSION]) NSLog(@"version %@", VERSION);
+		
+		[self switchAppFrom:argsDict[KEY_FROM] to:argsDict[KEY_TO]];
+	}
+	@catch (NSException * e) {
+        NSLog(@"error:%@", e);
+    }
+	@finally {
+		exit(0);
+	}
 }
 
 - (void) switchAppFrom:(NSString * )fromApp to:(NSString * )toApp {
@@ -31,13 +45,15 @@ NSString * privateArgs;
 
     for (NSRunningApplication * app in apps) {
         if([app.bundleIdentifier.lowercaseString hasPrefix:fromApp]) {
-            [app activateWithOptions:NSApplicationActivateIgnoringOtherApps];
+			NSLog(@"app %@",app);
+            [app activateWithOptions:NSApplicationActivateAllWindows];
         }
     }
 		
     for (NSRunningApplication * app in apps) {
         if([app.bundleIdentifier.lowercaseString isEqualToString:toApp]) {
-            [app activateWithOptions:NSApplicationActivateAllWindows|NSApplicationActivateIgnoringOtherApps];
+			NSLog(@"app %@",app);
+            [app activateWithOptions:NSApplicationActivateIgnoringOtherApps];
         }
     }
 }

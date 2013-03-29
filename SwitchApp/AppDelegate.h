@@ -8,6 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
+#define VERSION	(@"0.0.11")
+
+#define KEY_PERFIX  (@"-")
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
-- (void) ignite:(NSString * )args;
+- (void) setArgs:(NSMutableDictionary * )currentArgsDict;
 @end

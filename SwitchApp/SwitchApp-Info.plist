@@ -28,5 +28,7 @@
 	<string>Copyright © 2013年 KISSAKI Inc,. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>SwitchApp</string>
+	<key>LSUIElement</key>
+	<true/>
 </dict>
 </plist>
