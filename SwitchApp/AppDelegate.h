@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-#define VERSION	(@"0.0.18")
+#define VERSION	(@"0.5.9")
 
 #define KEY_PERFIX  (@"-")
 

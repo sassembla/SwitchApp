@@ -19,6 +19,7 @@
 		1349DCF016FAA09E00D52837 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1349DCEF16FAA09E00D52837 /* README.md */; };
 		1349DCF716FAB45100D52837 /* SwitchApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1349DCF616FAB45100D52837 /* SwitchApp.m */; };
 		1349DCF816FAB45100D52837 /* SwitchApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1349DCF616FAB45100D52837 /* SwitchApp.m */; };
+		139B574A17059AA100696D27 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139B574817059A9600696D27 /* ScriptingBridge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1349DCEF16FAA09E00D52837 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1349DCF516FAB45100D52837 /* SwitchApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchApp.h; sourceTree = "<group>"; };
 		1349DCF616FAB45100D52837 /* SwitchApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchApp.m; sourceTree = "<group>"; };
+		139B574817059A9600696D27 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1349DCBC16FAA05000D52837 /* Cocoa.framework in Frameworks */,
+				139B574A17059AA100696D27 /* ScriptingBridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +102,7 @@
 		1349DCBA16FAA05000D52837 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				139B574817059A9600696D27 /* ScriptingBridge.framework */,
 				1349DCBB16FAA05000D52837 /* Cocoa.framework */,
 				1349DCD916FAA05000D52837 /* SenTestingKit.framework */,
 				1349DCBD16FAA05000D52837 /* Other Frameworks */,
@@ -446,6 +450,7 @@
 				1349DCEB16FAA05000D52837 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1349DCEC16FAA05000D52837 /* Build configuration list for PBXNativeTarget "SwitchAppTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +459,7 @@
 				1349DCEE16FAA05000D52837 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
