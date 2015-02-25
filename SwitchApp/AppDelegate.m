@@ -10,8 +10,10 @@
 
 #import <ScriptingBridge/ScriptingBridge.h>
 
-#define KEY_TO		(@"-t")
 #define KEY_FROM	(@"-f")
+#define KEY_TO		(@"-t")
+#define KEY_DELAY	(@"-d")
+
 #define KEY_VERSION	(@"-v")
 
 #define KEY_SHOW	(@"--show")
@@ -40,9 +42,14 @@ NSDictionary * argsDict;
 		NSAssert1(argsDict[KEY_FROM], @"%@ fromApplication required", KEY_FROM);
 		NSAssert1(argsDict[KEY_TO], @"%@ toApplication required", KEY_TO);
 		
+		float delay = 0;
+		if (argsDict[KEY_DELAY]) {
+			delay = [argsDict[KEY_DELAY] floatValue];
+		}
+		
 		if (argsDict[KEY_VERSION]) NSLog(@"version %@", VERSION);
 		
-		[self switchAppFrom:argsDict[KEY_FROM] to:argsDict[KEY_TO]];
+		[self switchAppFrom:argsDict[KEY_FROM] to:argsDict[KEY_TO] withDelay:delay];
 	}
 	@catch (NSException * e) {
         NSLog(@"error:%@", e);
@@ -55,7 +62,7 @@ NSDictionary * argsDict;
 /**
  change focus from to
  */
-- (void) switchAppFrom:(NSString * )fromAppStr to:(NSString * )toAppStr {
+- (void) switchAppFrom:(NSString * )fromAppStr to:(NSString * )toAppStr withDelay:(float)delay {
 	
 	if (![fromAppStr isEqualToString:toAppStr]) {
 		id fromApp = [SBApplication applicationWithBundleIdentifier:fromAppStr];
@@ -73,8 +80,31 @@ NSDictionary * argsDict;
 		} else {
 			NSLog(@"fromApp( %@ ) not found. please use --show.", fromApp);
 		}
+		
+		// wait for changing focus to target "from" app.
+		NSLog(@"fromApp:%@", fromApp);
 	}
-
+	
+	// force wait frame
+	if (0 != delay) {
+		for (NSRunningApplication *currApp in [[NSWorkspace sharedWorkspace] runningApplications]) {
+			if ([currApp isActive]) {
+				NSLog(@"* %@", [currApp localizedName]);
+			} else {
+				NSLog(@"  %@", [currApp localizedName]);
+			}
+		}
+		[[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:delay]];
+		NSLog(@"after");
+		for (NSRunningApplication *currApp in [[NSWorkspace sharedWorkspace] runningApplications]) {
+			if ([currApp isActive]) {
+				NSLog(@"* %@", [currApp localizedName]);
+			} else {
+				NSLog(@"  %@", [currApp localizedName]);
+			}
+		}
+	}
+	
 	id toApp = [SBApplication applicationWithBundleIdentifier:toAppStr];
 	if (toApp) {
 		@try {

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7474B06A-3980-44A9-8321-30F6AE7FB26E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SwitchApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7D353B904EA6B5683ADD0ED7A0252F8E0FB170EE</key>
+		<string>https://github.com/sassembla/SwitchApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SwitchApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7D353B904EA6B5683ADD0ED7A0252F8E0FB170EE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sassembla/SwitchApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7D353B904EA6B5683ADD0ED7A0252F8E0FB170EE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7D353B904EA6B5683ADD0ED7A0252F8E0FB170EE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SwitchApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
